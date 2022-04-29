@@ -35,9 +35,9 @@ async def funzione():
     ]
         
     try:
-        await BOT.send_photo(CANALE, PK.get('url'), caption=f"ℹ️ | {PK.get('title')}\n\n☁️ Subreddit: {ENDPOINT.capitalize()}\n🍑 NSFW Content: ✅\n👍 UPs: {PK.get('ups')}", reply_markup=InlineKeyboardMarkup(KEYBOARD))
+        await BOT.send_photo(CHANNEL, PK.get('url'), caption=f"ℹ️ | {PK.get('title')}\n\n☁️ Subreddit: {ENDPOINT.capitalize()}\n🍑 NSFW Content: ✅\n👍 UPs: {PK.get('ups')}", reply_markup=InlineKeyboardMarkup(KEYBOARD))
     except:
-        await BOT.send_photo(CANALE, PK.get('url'), caption=f"ℹ️ | {PK.get('title')}\n\n☁️ Subreddit: {ENDPOINT.capitalize()}\n🍑 NSFW Content: ✅\n👍 UPs: {PK.get('ups')}", reply_markup=InlineKeyboardMarkup(KEYBOARD))
+        await BOT.send_photo(CHANNEL, PK.get('url'), caption=f"ℹ️ | {PK.get('title')}\n\n☁️ Subreddit: {ENDPOINT.capitalize()}\n🍑 NSFW Content: ✅\n👍 UPs: {PK.get('ups')}", reply_markup=InlineKeyboardMarkup(KEYBOARD))
         
 #scheduler things, dont touch if u dont know what u doin'        
 scheduler = AsyncIOScheduler()
